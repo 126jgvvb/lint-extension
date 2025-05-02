@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>chargedClicker.me</title>
+    </head>
+    <style>
+            .header,.footer{
+                background-color: darkgray;
+                height: 2%;
+                text-align: center;
+                padding-left: 10%;
+                padding-right: 10%;
+                padding-top: 10%;
+                padding-bottom: 2%;
+                margin: -9%;
+            }
+
+            .footer{
+                margin-top: 10%;
+                padding-top: 7%;
+                padding-bottom: 6.2%;
+            }
+
+            .header div{
+                margin-bottom: 2%;
+            }
+
+            section{
+                display: block;
+            }
+
+            .section1{
+                margin-top: 10%;
+                text-align: center;
+                display: flex;
+            }
+
+            .section-child-2,.section-child-3{
+                text-align: center;
+                margin-left: 2%;
+                margin-bottom: 2%;
+            }
+
+            #token-input{
+                padding: 1%;
+                width: 85%;
+            }
+
+            .overview-div{
+                display: flex;
+            }
+
+            .start-button{
+                padding: 20%;
+            }
+        
+    </style>
+    <script src="popup.js" type="module"></script>
+    <body>
+        <header class="header">
+            <h1>chargedClicker</h1>
+
+            <div id="overview-div">
+                <div>
+                    <label>Subscription Status:</label>
+                    <label id="status-label">Active</label>
+                </div>
+
+                <div>
+                    <label>Enter Subscription Token:</label>
+                    <input type="text" value="" id="token-input" placeholder="token"/>
+                </div>
+
+                <div>
+                    <input type="button" value="validate Token" id="validation-button"/>
+                </div>
+
+                <div>
+                    <label>Total Days:</label>
+                    <label id="days-label">10 days</label>
+                </div>
+
+                
+                <div>
+                    <label>Remaining Days:</label>
+                    <label id="days-remaining-label">10 days</label>
+                </div>
+
+                <div>
+                    <label>Maximum Tabs:</label>
+                    <label id="tabs-label">4 tabs</label>
+                </div>
+
+                <div>
+                    <label>Default key:</label>
+                    <label id="validation-text">Z</label>
+                </div>
+            </div>
+        </header>
+
+        
+        <div class="section1">
+            <section class="section-child-1">
+                <div class="time-frame-set"></div>
+            </div>
+
+            <div class="section-child-2">
+                <label>Select Interval:</label>
+                <input type="number" id="interval" value="5000" />
+                <select id="timeframe-select">
+                    <option>millisec</option>
+                    <option>sec</option>
+                    <option>mins</option>
+                    <option>hours</option>
+                </select>
+            </div>
+
+            <div class="section-child-3">
+                <label>Select key for control:</label>
+                <input type="text" id="hot-key"/>
+            </div>
+
+            <div class="section-child-3">
+                <input type="button" id="start-button" class="btn-success" onClick="alert('button clicked')" value="Start"/>
+            </div>
+           
+        </section>
+
+    </body>
+
+    <footer class="footer">
+        <div class="sub-div">
+            <label>Contact us On:</label>
+            <label>+256741882818</label>
+        </div>
+
+        <div class="sub-div">
+            <label>Email:</label>
+            <label>tezoschain958@gmail.com</label>
+        </div>
+    </footer>
+</html>
