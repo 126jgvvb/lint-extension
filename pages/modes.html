@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>X-Linter</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+
+    <body class="mode-body">
+        <div class="overlay2">
+            <div class="mode-box" >
+                <label>Select mode of operation</label>
+               
+                <div class="modes-select">
+                    <div class="radio-row clock">
+                        <label>Swap Mode</label>
+                    <input type="radio" id="swap-mode" value="swap-mode" onchange="" />
+                </div>
+
+                <div class="radio-row clock">
+                    <label>kYC Mode</label>
+                    <input name="mode" type="radio" value="kyc-mode" id="kyc-mode" onchange="" />
+                </div>
+
+                <div class="token-wrap">
+                    <label>Token:</label>
+                    <input name="mode" id="tokenInput" type="text"  placeholder="xyz...." value="" />
+                  </div>
+                </div>
+               
+               <button id="save-button" class="save-button">
+                Confirm
+               </button>
+               
+            </div>
+        </div>
+
+        <script src="../dist/modes.js" type="module" ></script>
+    </body>
+</html>
